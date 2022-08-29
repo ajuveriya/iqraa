@@ -17,5 +17,6 @@ if st.sidebar.checkbox("Show income data"):
     #table = [['S.NO', 'NAME','INCOME', 'EXPENDITURE','BALANCE'], [1, 'QADEER PASHA', 250630,242644,7986], [2, 'KAREEMUDDIN',60370 ,47744,12626], [3, 'ARJ',73000 ,0,73000],[4, 'TOTAL',384000,	290388,73000]]
     df = pd.DataFrame(
     [['NAME', 'INCOME', 'EXPENDITURE','BALANCE'], ['QADEER PASHA', 250630,242644,7986], ['KAREEMUDDIN',60370 ,47744,12626], ['ARJ',73000 ,0,73000],['TOTAL',384000,	290388,73000]])
+    st.table(df)
 
-st.table(df)
+
