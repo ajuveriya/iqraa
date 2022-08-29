@@ -18,8 +18,8 @@ if st.sidebar.checkbox("Show income data"):
     
     df = pd.DataFrame(
     [['NAME', 'INCOME', 'EXPENDITURE','BALANCE'], ['QADEER PASHA', 250630,242644,7986], ['KAREEMUDDIN',60370 ,47744,12626], ['ARJ',73000 ,0,73000],['TOTAL',384000,	290388,73000]])
-    style = df.style.hide_index()
-    st.write(styler.to_html(), unsafe_allow_html=True)
+
+   
     st.table(df)
 st.sidebar.subheader("Month Wise Income and Expenditure 2022")
 plot_types = st.sidebar.multiselect("Select the Month:", 
