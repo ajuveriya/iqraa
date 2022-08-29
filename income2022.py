@@ -24,7 +24,7 @@ plot_types = st.sidebar.multiselect("Select the Month:",
 if 'January' in plot_types:
     st.subheader("January 2022")
     st.dataframe(school_df)
-     df = pd.DataFrame(
+    df = pd.DataFrame(
     [['NAME', 'INCOME', 'EXPENDITURE','BALANCE'], ['QADEER PASHA', 250630,242644,7986], ['KAREEMUDDIN',60370 ,47744,12626], ['ARJ',73000 ,0,73000],['TOTAL',384000,	290388,73000]])
 
     st.table(df)
@@ -32,7 +32,7 @@ if 'January' in plot_types:
 if 'February' in plot_types:
     st.subheader("February 2022")
     st.dataframe(school_df)
-     df = pd.DataFrame(
+    df = pd.DataFrame(
     [['NAME', 'INCOME', 'EXPENDITURE','BALANCE'], ['QADEER PASHA', 250630,242644,7986], ['KAREEMUDDIN',60370 ,47744,12626], ['ARJ',73000 ,0,73000],['TOTAL',384000,	290388,73000]])
 
     st.table(df)
