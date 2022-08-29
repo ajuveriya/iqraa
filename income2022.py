@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 #import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 import streamlit as st
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from tabulate import tabulate
 school_df = pd.read_csv("school_income.csv")
