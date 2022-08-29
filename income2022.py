@@ -4,8 +4,8 @@ import pandas as pd
 #import seaborn as sns
 import streamlit as st
 #from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from tabulate import tabulate
+#from sklearn.svm import SVC
+#from tabulate import tabulate
 school_df = pd.read_csv("school_income.csv")
 st.title("IQRAA SCHOOL INCOME 2022")
 st.sidebar.title("SCHOOL INCOME DETAILS")
