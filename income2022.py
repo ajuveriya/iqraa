@@ -15,8 +15,10 @@ if st.sidebar.checkbox("Show income data"):
     #st.write("January Income 2022: 250630")
     #st.write("January Expenditure 2022: 242644")
     #table = [['S.NO', 'NAME','INCOME', 'EXPENDITURE','BALANCE'], [1, 'QADEER PASHA', 250630,242644,7986], [2, 'KAREEMUDDIN',60370 ,47744,12626], [3, 'ARJ',73000 ,0,73000],[4, 'TOTAL',384000,	290388,73000]]
+    
     df = pd.DataFrame(
     [['NAME', 'INCOME', 'EXPENDITURE','BALANCE'], ['QADEER PASHA', 250630,242644,7986], ['KAREEMUDDIN',60370 ,47744,12626], ['ARJ',73000 ,0,73000],['TOTAL',384000,	290388,73000]])
+    df.set_index('column', inplace=True)
     st.table(df)
 st.sidebar.subheader("Month Wise Income and Expenditure 2022")
 plot_types = st.sidebar.multiselect("Select the Month:", 
